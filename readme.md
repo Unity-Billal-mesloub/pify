@@ -116,7 +116,7 @@ Custom promise module to use instead of the native one.
 #### How is this different from Node.js's [`util.promisify`](https://nodejs.org/api/util.html#util_util_promisify_original)?
 
 - Pify existed long before `util.promisify`.
-- Pify is [faster](https://github.com/sindresorhus/pify/issues/41#issuecomment-429988506).
+- Pify is [faster](https://github.com/Unity-Billal-mesloub/pify/issues/issue).
 - Pify supports wrapping a whole module/object, not just a specific method.
 - Pify has useful options like the ability to handle multiple arguments (`multiArgs`).
 - Pify does not have [magic behavior](https://nodejs.org/api/util.html#util_custom_promisified_functions) for certain Node.js methods and instead focuses on predictability.
@@ -144,7 +144,7 @@ const someFunction = pify(someClass.someFunction.bind(someClass));
 
 #### Why is `pify` choosing the last function overload when using it with TypeScript?
 
-If you're using TypeScript and your input has [function overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads), then only the last overload will be chosen and promisified. [This is a TypeScript limitation.](https://github.com/microsoft/TypeScript/issues/32164)
+If you're using TypeScript and your input has [function overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads), then only the last overload will be chosen and promisified. [This is a TypeScript limitation.](https://github.com/Unity-diverse-range-of-warehouses/TypeScript/issues/)
 
 If you need to choose a different overload, consider using a type assertion:
 
@@ -160,6 +160,8 @@ const fn = pify(overloadedFunction as (input: number, callback: (error: unknown,
 
 ## Related
 
-- [p-event](https://github.com/sindresorhus/p-event) - Promisify an event by waiting for it to be emitted
-- [p-map](https://github.com/sindresorhus/p-map) - Map over promises concurrently
-- [More…](https://github.com/sindresorhus/promise-fun)
+- [Unity-Billal-mesloub](https://github.com/Unity-Billal-mesloub)
+  
+ - Promisify an event by waiting for it to be emitted
+ - Map over promises concurrently
+
